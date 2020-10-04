@@ -1,0 +1,22 @@
+﻿<Window x:Class="Lab1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="540.5">
+    <Grid Margin="0,0,-6.4,-0.4">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Amazon Buckets Practice" HorizontalAlignment="Left" Margin="99,28,0,0" VerticalAlignment="Top" Height="37" Width="311" FontSize="24" FontWeight="Bold"/>
+        <Button x:Name="loadBucketButton" Content="Load buckets" HorizontalAlignment="Left" Margin="29,86,0,0" VerticalAlignment="Top" Width="191" Click="LoadBucketButton_Click" Height="28"/>
+        <ListBox x:Name="bucketListBox" HorizontalAlignment="Left" Height="100" Margin="29,134,0,0" VerticalAlignment="Top" Width="191" FontSize="20"/>
+        <Image x:Name="catImage" HorizontalAlignment="Left" Height="144" Margin="29,268,0,0" VerticalAlignment="Top" Width="191" Source="cat.jpg"/>
+        <Label Content="Choose Bucket to upload this cat image " HorizontalAlignment="Left" Margin="252,86,-28.4,0" VerticalAlignment="Top" Width="258" Height="28" FontSize="14"/>
+        <Button x:Name="uploadButton" Content="UPLOAD" HorizontalAlignment="Left" Margin="306,152,0,0" VerticalAlignment="Top" Width="104" Height="60" RenderTransformOrigin="-0.786,-0.376" Click="UploadButton_Click"/>
+        <Label x:Name="uploadText" Content="" HorizontalAlignment="Left" Margin="306,312,0,0" VerticalAlignment="Top" Width="135"/>
+
+    </Grid>
+</Window>
